@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/common.css">
@@ -13,13 +13,18 @@
 
 <body>
     <section class="top">
-        <div class="container clearfix">
+        <div class="container inside">
             <nav class="top-nav">
+                <div class="logo">
+                    <a href="#" class="logo-link">
+                        <img src="./img/logo.png" alt="">
+                    </a>
+                </div>
                 <ul>
                     <li class="top-nav-item"><a href="#">主页</a></li>
                     <li class="top-nav-item"><a href="#">解决方案</a></li>
                     <li class="top-nav-item"><a href="#">技术支持</a></li>
-                    <li class="top-nav-item active"><a href="#">关于我们</a></li>
+                    <li class="top-nav-item"><a href="#">关于我们</a></li>
                     <li class="top-nav-item"><a href="#">联系我们</a></li>
                 </ul>
             </nav>
@@ -28,22 +33,17 @@
     <header class="header">
         <div class="container clearfix">
             <nav class="header-nav">
-                <div class="header-nav-content">
-
-                </div>
+                <div class="header-nav-content"></div>
             </nav>
         </div>
     </header>
-    <div class="sidebar">
-        <div class="">
-
-        </div>
+    <div class="sidebar floor"  id="sidebar">
         <div class="container">
             <h1 class="business-title">IT解决方案与服务提供商</h1>
             <div class="business-content">
                 <ul class="business-warp">
                     <li class="business-list mobile">
-                        <a href="#">
+                        <a href="javascript:;">
                             <span class="bussiness-icon"></span>
                             <span class="bussiness-des-title">移动端平台</span>
                             <span class="bussiness-des">为企业提供高端软件定制开发以及互联网解决方案，帮助客户明确系统具体需求，并管理维护其整个生命周期</span>
@@ -51,7 +51,7 @@
                         </a>
                     </li>
                     <li class="business-list html5">
-                        <a href="#">
+                        <a href="javascript:;">
                             <span class="bussiness-icon"></span>
                             <span class="bussiness-des-title">网站开发</span>
                             <span
@@ -60,7 +60,7 @@
                         </a>
                     </li>
                     <li class="business-list sm-pro">
-                        <a href="#">
+                        <a href="javascript:;">
                             <span class="bussiness-icon"></span>
                             <span class="bussiness-des-title">小程序开发</span>
                             <span class="bussiness-des">为企业制定简单易用的应用服务软件，服务涵盖整个规划、开发、设计完整流程，并在软件生命周期内全程进行跟踪维护</span>
@@ -71,11 +71,191 @@
             </div>
         </div>
     </div>
+    <section class="solution floor">
+        <div class="solution-title">
+            <p class="title-text">行业解决方案</p>
+        </div>
+        <div class="container">
+            <div class="focus">
+                <ul class="focus-list">
+                    <li class="left-btn btn">
+                        <img src="./img/left-arrows.png" alt="">
+                    </li>
+                    <li class="right-btn btn">
+                        <img src="./img/right-arrows.png" alt="">
+                    </li>
+                    <li class="focus-item">
+                        <a href="javascript:;">
+                            <img src="./img/financial.png" alt="">
+                        </a>
+                    </li>
+                    <li class="focus-item">
+                        <a href="javascript:;">
+                            <img src="./img/web-things.png" alt="">
+                        </a>
+                    </li>
+                    <li class="focus-item">
+                        <a href="javascript:;">
+                            <img src="./img/city.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+                <div class="focus-btn">
+                    <a href="javascript:;" class="focus-btn-item active">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="details floor">
+        <div class="container">
+            <div class="plate">
+                <p class="title">实力比承诺更重要</p>
+                <p class="more">我们还能做的更多，具体需求联系我们</p>
+                <a href="#" class="details-link">
+                    <span>了解详情</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="contact floor">
+        <div class="container">
+            <div class="form">
+                <form action="#">
+                    <h1 class="title">联系我们</h1>
+                    <p>
+                        <label for="username" class="tag">
+                            姓名
+                        </label>
+                        <input type="text" name="username" placeholder="请输入联系人姓名" class="user-text nborder"
+                            id="username" autocomplete="off">
+                    </p>
+                    <p>
+                        <label for="email" class="tag">
+                            邮箱
+                        </label>
+                        <input type="email" name="email" placeholder="请输入您的邮箱" class="user-text nborder"
+                            autocomplete="off">
+                    </p>
+                    <p>
+                        <label for="message" class="tag tag-align">
+                            信息
+                        </label>
+                        <textarea style="resize:none" name="message" id="message"
+                            class="user-message nborder"></textarea>
+                    </p>
+                    <p class="sub">
+                        <input type="submit" class="sub-btn" value="提交" name="button">
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="service">
+        <div class="container inside">
+            <ul class="service-list">
+                <li class="service-item">
+                    <div class="s_left">
+                        <p><img src="./img/timer.png"></p>
+                    </div>
+                    <div class="s_right">
+                        <h1>7x24小时售后支持</h1>
+                        <h2>全国7×24小时客服热线</h2>
+                    </div>
+                </li>
+                <li class="service-item">
+                    <div class="s_left">
+                        <p><img src="./img/safe.png"></p>
+                    </div>
+                    <div class="s_right">
+                        <h1>5倍故障时长赔偿</h1>
+                        <h2>5倍赔付终端服务的时间</h2>
+                    </div>
+                </li>
+                <li class="service-item">
+                    <div class="s_left">
+                        <p><img src="./img/refund.png"></p>
+                    </div>
+                    <div class="s_right">
+                        <h1>15天无理由退款</h1>
+                        <h2>部分产品可享受15天无理由退款</h2>
+                    </div>
+                </li>
+                <li class="service-item">
+                    <div class="s_left">
+                        <p><img src="./img/user.png"></p>
+                    </div>
+                    <div class="s_right">
+                        <h1>多对一团队服务</h1>
+                        <h2>优秀开发团队便捷服务</h2>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container inside">
+            <div class="f_box">
+                <div class="f_left">
+                    <dl class="f_left_d1">
+                        <dt>
+                            澜硕网络
+                        </dt>
+                        <dd>
+                            <a href="#">主页</a>
+                        </dd>
+                        <dd>
+                            <a href="#">解决方案</a>
+                        </dd>
+                        <dd>
+                            <a href="#">联系我们</a>
+                        </dd>
+                        <dd>
+                            <a href="#">关于我们</a>
+                        </dd>
+                        <dd>
+                            <a href="#">技术支持</a>
+                        </dd>
+                    </dl>
+                    <dl class="f_left_d2">
+                        <dt>客户服务</dt>
+                        <dd class="hotline">
+                            <p>服务热线&nbsp;
+                                <span class="phone">13137558986</span>
+                            </p>
+                        </dd>
+                        <dd>
+                            <p>邮箱:&nbsp;
+                                <span>806171272@qq.com</span>
+                            </p>
+                        </dd>
+                        <dd>
+                            <p>地址:&nbsp;
+                                <span>漯河市郾城区嫩江路工商联大厦1幢4层423号</span>
+                            </p>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="f_right">
+                    <div class="qr_code_weibo">
+                        <img src="./img/foot.png" alt="">
+                        <p>关注深蓝官方微博</p>
+                    </div>
+                    <div class="qr_code_weixin">
+                        <img src="./img/foot.png" alt="">
+                        <p>关注深蓝官方微信</p>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>© copyright your website link, 2015. More Templates 河南澜硕网络科技有限公司</p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
     <!--电梯开始-->
-    <div id="elevator" class="elevator container">
+    <div id="elevator" class="elevator">
         <a href="javascript:;" class="elevator-item active">
-        </a>
-        <a href="javascript:;" class="elevator-item">
         </a>
         <a href="javascript:;" class="elevator-item">
         </a>

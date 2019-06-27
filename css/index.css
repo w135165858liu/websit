@@ -1,22 +1,25 @@
+/*选择楼层*/
 #elevator {
+    opacity: 0;
     width: 20px;
     height: 140px;
     position: fixed;
-    bottom:281px;
-    right: 280px;
-    
+    bottom: 50%;
+    right: 15%;
+    transition: all .33s
 }
-#elevator .active{
+#elevator .active {
     background: rgba(5, 121, 255, 1);
+    border:none !important;
 }
+
 #elevator .elevator-item {
     display: block;
     width: 20px;
     height: 20px;
-    /* background: rgba(5, 121, 255, 1); */
-    border:2px solid rgba(158,158,158,1);
+    border: 2px solid rgba(158, 158, 158, 1);
     border-radius: 50%;
-    margin-bottom:20px;
+    margin-bottom: 20px;
 }
 
 /*顶部导航栏*/
@@ -26,15 +29,24 @@
 }
 
 .top-nav {
+    width: 100%;
     height: 80px;
     background-color: rgba(56, 62, 66, 1);
+}
 
+.logo {
+    float: left;
+}
+
+.logo-link {
+    display: inline-block;
+    width: 194px;
+    height: 80px;
+    padding: 10px 11px 10px 11px;
 }
 
 .top-nav ul {
-    position: absolute;
-    right: 0px;
-    margin-right: 360px;
+    float: right;
 }
 
 .top-nav ul .top-nav-item {
@@ -76,18 +88,19 @@
 .header {
     width: 100%;
     background-image: url(../img/bg.png);
-    background-size: 100%;
+    background-size: 100% 100%;
 }
 
 .header-nav {
     height: 700px;
-    padding: 135px 360px 120px 360px;
+    padding-top: 240px;
 }
 
 .header-nav .header-nav-content {
-    width: 1200px;
-    height: 445px;
-    background-image: url(../img/yuansu.png)
+    width: 786px;
+    height: 123px;
+    background-image: url(../img/yuansu.png);
+    margin: 0 auto;
 }
 
 /*业务功能区*/
@@ -97,24 +110,21 @@
 }
 
 .sidebar .business-title {
-    width: 435px;
     height: 56px;
     font-size: 40px;
     position: absolute;
     top: 50px;
-    left: 50%;
-    margin-left: -217px;
 }
 
 .sidebar .business-content {
+    width: 100%;
+    max-width: 1200px;
     position: absolute;
     bottom: 93px;
-    left: 50%;
-    margin-left: -600px;
 }
 
 .sidebar .business-content .business-warp {
-    width: 1200px;
+    width: 100%;
     height: 400px;
     display: flex;
     justify-content: space-between;
@@ -122,7 +132,7 @@
 
 .sidebar .business-content .business-list {
     position: relative;
-    width: 380px;
+    width: 33.33%;
     height: 100%;
     border: 1px solid #979797;
     border-radius: 8px;
@@ -174,6 +184,9 @@
 }
 
 /*h5网站开发*/
+.sidebar .business-content .html5{
+    margin: 0 30px
+}
 .sidebar .business-content .html5:hover {
     background-color: #32383D;
 }
@@ -286,4 +299,504 @@
     bottom: 37px;
     left: 50%;
     margin-left: -60px;
+}
+
+/*行业解决方案*/
+.solution {
+    height: 656px;
+}
+
+.solution .solution-title {
+    height: 156px;
+    background-color: #2C2E34;
+}
+
+.solution .solution-title .title-text {
+    position: absolute;
+    margin: 50px auto;
+    text-align: center;
+    width: 100%;
+    height: 56px;
+    font-size: 40px;
+    font-family: PingFangSC-Medium;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+    line-height: 56px;
+
+}
+
+.solution .focus {
+    height: 500px;
+    position: relative;
+}
+
+.solution .focus .focus-list {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.solution .focus .focus-list .btn {
+    width: 30px;
+    height: 52px;
+    position: absolute;
+    top: 174px;
+}
+.solution .focus .focus-list .btn img:hover{
+    z-index: 10;
+    background-color: #b49b8d;
+    transform: translateY(-5px);
+    border-radius: 2px;
+}
+
+.solution .focus .focus-list .left-btn {
+    left: 21px;
+}
+
+.solution .focus .focus-list .right-btn {
+    right: 21px;
+}
+
+.solution .focus .focus-item {
+    flex-grow: 1;
+    flex-shrink: 1;
+    float: left;
+}
+.solution .focus .focus-item img{
+    width: 100%;
+    height:100%;
+}
+
+/*焦点图底部按钮*/
+.solution .focus .focus-btn {
+    width: 160px;
+    height: 20px;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    margin-left: -70px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.solution .focus .focus-btn-item {
+    float: left;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgba(158, 158, 158, 1);
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.solution .focus .focus-btn .active {
+    background: rgba(5, 121, 255, 1);
+    border: none;
+}
+
+/*了解详情部分*/
+.details {
+    height: 304px;
+    background-image: url(../img/bg\(1\).png)
+}
+
+.details .plate {
+    position: relative;
+    width: 442px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.details .plate .title {
+    position: absolute;
+    bottom: 198px;
+    width: 100%;
+    height: 56px;
+    font-size: 40px;
+    font-family: PingFangSC-Regular;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    line-height: 56px;
+    text-align: center;
+}
+
+.details .plate .more {
+    position: absolute;
+    bottom: 141px;
+    left: 50%;
+    margin-left: -221px;
+    width: 442px;
+    height: 37px;
+    font-size: 26px;
+    font-family: PingFangSC-Regular;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    line-height: 37px;
+}
+
+.details .plate .details-link {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    margin-left: -53px;
+    text-decoration: none;
+    position: absolute;
+    display: inline-block;
+    width: 105px;
+    height: 42px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    line-height: 42px;
+    text-align: center;
+}
+
+.details .plate .details-link span {
+    font-size: 16px;
+    font-family: PingFangSC-Regular;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    line-height: 22px;
+}
+/*联系我们*/
+.contact {
+    height: 799px;
+    background-color: #202326;
+}
+
+.contact .form {
+    width: 676px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.contact .form .title {
+    width: 100%;
+    height: 56px;
+    font-size: 40px;
+    font-family: PingFangSC-Regular;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    line-height: 56px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.contact .form .tag {
+    width: 40px;
+    height: 28px;
+    font-size: 20px;
+    font-family: PingFangSC-Light;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 1);
+    line-height: 28px;
+    margin-right: 40px;
+
+}
+
+.contact .form .tag-align {
+    vertical-align: top;
+}
+
+
+.contact .form .user-message {
+    width: 590px;
+    height: 200px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 4px;
+}
+
+.contact .form .sub {
+    text-align: center;
+}
+
+.contact .form .sub-btn {
+    width: 290px;
+    height: 80px;
+    border-radius: 10px;
+    border: 2px solid rgba(242, 242, 242, 1);
+    background-color: #202326;
+    font-size: 28px;
+    font-family: PingFangSC-Light;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 1);
+    line-height: 40px;
+}
+
+.nborder {
+    border: none;
+    margin-bottom: 40px;
+    width: 590px;
+    height: 70px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 4px;
+    padding: 21px 20px 21px 20px;
+}
+.nborder:focus{
+    background-color: #eee;
+    -moz-box-shadow:3px 3px 10px #ccc inset;               /* For Firefox3.6+ */
+    -webkit-box-shadow:3px 3px 10px #ccc inset;            /* For Chrome5+, Safari5+ */
+    box-shadow:3px 3px 10px #ccc inset;  
+}
+/*底部服务支持*/
+.service {
+    height: 120px;
+    background-color: #1C1919;
+    padding-top: 35px;
+}
+
+.service .service-list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.service .service-item {
+    min-width: 209px;
+    display: flex;
+    flex-direction: row;
+}
+
+.service .s_left {
+    margin-right: 14px;
+}
+
+.service .s_left img {
+    width: 46px;
+    height: 45px;
+}
+
+.service .service-item.s_right {}
+
+.service .service-item .s_right h1 {
+    font-size: 18px;
+    font-family: PingFangSC-Regular;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    line-height: 25px;
+}
+
+.service .service-item .s_right h2 {
+    font-size: 12px;
+    font-family: PingFangSC-Regular;
+    font-weight: 400;
+    color: rgba(95, 93, 93, 1);
+    line-height: 17px;
+}
+
+/*底部*/
+.footer {
+    height: 321px;
+    background-color: #000;
+    padding-top: 60px;
+}
+
+.footer .f_box {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer .f_left {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.footer .f_left dl {
+    display: inline-block;
+    margin-right: 100px;
+}
+
+.footer .f_left dt {
+    height: 20px;
+    font-size: 14px;
+    font-family: PingFangSC-Semibold;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1);
+    line-height: 20px;
+    margin-bottom: 23px;
+}
+
+.footer .f_left a {
+    text-decoration: none;
+    font-size: 14px;
+    font-family: PingFangSC-Light;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 1);
+    line-height: 14px;
+}
+.footer .f_left .f_left_d1 dd{
+    min-width: 56px;
+}
+.footer .f_left .f_left_d2 dd{
+    min-width: 315px;
+}
+.footer .f_left dd {
+    margin-bottom: 18px;
+    height: 14px;
+}
+
+.footer .f_left dd p {
+    font-size: 14px;
+    font-family: PingFangSC-Light;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 1);
+    line-height: 14px;
+}
+
+.footer .f_left .hotline {
+    height: 24px;
+    line-height: 24px;
+}
+
+.footer .f_left dd p .phone {
+    font-size: 24px;
+    font-family: HelveticaNeue-Light;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 1);
+}
+
+.footer .f_right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer .f_right img {
+    width: 144px;
+    height: 144px;
+}
+
+.footer .f_right p {
+    width: 144px;
+    font-size: 14px;
+    font-family: PingFangSC-Light;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 1);
+    line-height: 20px;
+    text-align:center;
+}
+
+.footer .f_right .qr_code_weibo {
+    margin-right: 20px;
+}
+
+.footer .f_right .qr_code_weibo img {}
+
+.footer .f_right .qr_code_weixin {}
+
+.footer .f_right .qr_code_weixin img {}
+
+.copyright {
+    height: 20px;
+    font-size: 14px;
+    font-family: PingFangSC-Light;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 1);
+    line-height: 20px;
+    position: absolute;
+    bottom: 20px;
+}
+/*焦点图*/
+/*焦点开始*/
+.focus{
+    height: 504px;
+    background: #f7f7f7;
+    margin-bottom: 10px;
+}
+.category{
+    position: relative;
+    width: 208px;
+    margin-top: -54px;
+}
+.category-title{
+    display: block;
+    width: 100%;
+    height: 54px;
+    line-height: 54px;
+    background: #b1191a;
+    font-size: 14px;
+    color: #fff;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+.category-title .icon{
+    margin-right: 5px;
+}
+.category .dropdown{
+    position: static;
+}
+.category .dropdown-toggle{
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+    box-sizing: border-box;
+    background: #ea675a;
+    padding-left: 10px;
+    cursor: pointer;
+}
+.category .dropdown-link{
+    font-size: 14px;
+    color: #fff;
+}
+.category .dropdown-icon{
+    position: absolute;
+    right: 10px;
+    color: #fff;
+    font-style: normal;
+}
+.category .dropdown-layer{
+    /*display: block;*/
+    top:54px;
+    left:100%;
+    width: 774px;
+    min-height: 504px;
+    background: #fff;
+    padding-bottom: 24px;
+    box-sizing: border-box;
+}
+.category-details{
+    overflow: hidden;
+    margin-top: 24px;
+    font-size: 14px;
+    width: 764px;
+}
+.category-details-title{
+    width: 84px;
+    text-align: right;
+    box-sizing: border-box;
+    padding-right: 10px;
+    border-right: 1px solid #ccc;
+}
+.category-details-title-link{
+    font-weight: bold;
+}
+.category-details-item{
+    width: 670px;
+    line-height: 20px;
+}
+.category-details-item .link{
+    margin-left: 10px;
+    display: inline-block;
+}
+.category-active .dropdown-toggle{
+    background: #ccc;
+}
+.category-active .dropdown-link,
+.category-active .dropdown-icon{
+    color: #ea675a;
+}
+.category .dropdown-loading{
+    margin: 220px auto;
+}
+.focus .carousel-wrap,
+.focus .carousel-wrap .carousel-item img {
+    width: 728px;
+    height: 504px;
 }
