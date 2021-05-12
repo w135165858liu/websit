@@ -10,6 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "swiper": "^4.5.0"
+    "swiper": "^6.5.1"
   }
 }
